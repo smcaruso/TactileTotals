@@ -15,6 +15,8 @@ struct ContentView: View {
     @State private var display: String = "0000000000"
     
     @State private var currentOperation: keyOperation?
+	
+	@GestureState private var isDetectingTapGesture: Bool = false
 
 	@EnvironmentObject var helpers: SMCHelpers
 	@EnvironmentObject var keypad: Keypad
@@ -29,24 +31,44 @@ struct ContentView: View {
                     .padding(EdgeInsets(top: 25, leading: 65, bottom: 25, trailing: 65))
                     .glassBackgroundEffect()
                 RealityView {content in
-                    content.add(await keypad.buildKeypad())
+					let keypadModel: Entity = await keypad.buildKeypad()
+                    content.add(keypadModel)
+					
+					keypadModel.children.forEach { entity in
+						
+						let initialTransform: Transform = entity.transform
+						let subscription = content.subscribe(to: AnimationEvents.PlaybackCompleted.self, on: entity) { event in
+							entity.move(to: initialTransform, relativeTo: keypadModel, duration: 0.1, timingFunction: .easeOut)
+							// todo: unsubscribe
+						}
+					}
+
                 }
                 .gesture(
                     SpatialTapGesture()
                         .targetedToAnyEntity()
-                        .onEnded({ value in
-                            
-							if let keyNumber: NumberValueComponent = value.entity.components[NumberValueComponent.self] {
+                        .onEnded({ gestureEvent in
+							
+							let pressedTransform: Transform = .init(translation: SIMD3(0.0, 0.0, -0.0025))
+							let downAnimation: AnimationPlaybackController = gestureEvent.entity.move(
+								to: pressedTransform,
+								relativeTo: gestureEvent.entity,
+								duration: 0.2,
+								timingFunction: .easeOut
+							)
+							
+							if let keyNumber: NumberValueComponent = gestureEvent.entity.components[NumberValueComponent.self] {
                                 tapKey(keyNumber.keyValue)
                             }
                             
-                            if let keyFunc: KeyOperationComponent = value.entity.components[KeyOperationComponent.self] {
+                            if let keyFunc: KeyOperationComponent = gestureEvent.entity.components[KeyOperationComponent.self] {
                                 tapKey(keyFunc.operation)
                             }
                             
                             
                         })
                 )
+
 			}
 		}
 	}

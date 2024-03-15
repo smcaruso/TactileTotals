@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5601ABCD2B8BD17D00D4588E /* Keypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5601ABCC2B8BD17D00D4588E /* Keypad.swift */; };
+		5626263A2B671DC9008D3628 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 562626392B671DC9008D3628 /* RealityKitContent */; };
+		5626263C2B671DC9008D3628 /* Tactile_TotalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626263B2B671DC9008D3628 /* Tactile_TotalsApp.swift */; };
+		5626263E2B671DC9008D3628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626263D2B671DC9008D3628 /* ContentView.swift */; };
+		562626402B671DCA008D3628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5626263F2B671DCA008D3628 /* Assets.xcassets */; };
+		562626432B671DCA008D3628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562626422B671DCA008D3628 /* Preview Assets.xcassets */; };
+		5626264B2B671FBA008D3628 /* KeypadWindowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626264A2B671FBA008D3628 /* KeypadWindowModel.swift */; };
+		5626264D2B674367008D3628 /* SMCHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626264C2B674367008D3628 /* SMCHelpers.swift */; };
+		563060412B89450200760897 /* NumericReadout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563060402B89450200760897 /* NumericReadout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5601ABCC2B8BD17D00D4588E /* Keypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keypad.swift; sourceTree = "<group>"; };
+		562626342B671DC9008D3628 /* Tactile Totals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tactile Totals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		562626382B671DC9008D3628 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		5626263B2B671DC9008D3628 /* Tactile_TotalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tactile_TotalsApp.swift; sourceTree = "<group>"; };
+		5626263D2B671DC9008D3628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5626263F2B671DCA008D3628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		562626422B671DCA008D3628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		562626442B671DCA008D3628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5626264A2B671FBA008D3628 /* KeypadWindowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadWindowModel.swift; sourceTree = "<group>"; };
+		5626264C2B674367008D3628 /* SMCHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCHelpers.swift; sourceTree = "<group>"; };
+		563060402B89450200760897 /* NumericReadout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericReadout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		562626312B671DC9008D3628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5626263A2B671DC9008D3628 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5626262B2B671DC9008D3628 = {
+			isa = PBXGroup;
+			children = (
+				562626362B671DC9008D3628 /* Tactile Totals */,
+				562626372B671DC9008D3628 /* Packages */,
+				562626352B671DC9008D3628 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		562626352B671DC9008D3628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				562626342B671DC9008D3628 /* Tactile Totals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		562626362B671DC9008D3628 /* Tactile Totals */ = {
+			isa = PBXGroup;
+			children = (
+				5626263B2B671DC9008D3628 /* Tactile_TotalsApp.swift */,
+				5626263D2B671DC9008D3628 /* ContentView.swift */,
+				5626264A2B671FBA008D3628 /* KeypadWindowModel.swift */,
+				5626264C2B674367008D3628 /* SMCHelpers.swift */,
+				5626263F2B671DCA008D3628 /* Assets.xcassets */,
+				562626442B671DCA008D3628 /* Info.plist */,
+				562626412B671DCA008D3628 /* Preview Content */,
+				563060402B89450200760897 /* NumericReadout.swift */,
+				5601ABCC2B8BD17D00D4588E /* Keypad.swift */,
+			);
+			path = "Tactile Totals";
+			sourceTree = "<group>";
+		};
+		562626372B671DC9008D3628 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				562626382B671DC9008D3628 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		562626412B671DCA008D3628 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				562626422B671DCA008D3628 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		562626332B671DC9008D3628 /* Tactile Totals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 562626472B671DCA008D3628 /* Build configuration list for PBXNativeTarget "Tactile Totals" */;
+			buildPhases = (
+				562626302B671DC9008D3628 /* Sources */,
+				562626312B671DC9008D3628 /* Frameworks */,
+				562626322B671DC9008D3628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tactile Totals";
+			packageProductDependencies = (
+				562626392B671DC9008D3628 /* RealityKitContent */,
+			);
+			productName = "Tactile Totals";
+			productReference = 562626342B671DC9008D3628 /* Tactile Totals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5626262C2B671DC9008D3628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					562626332B671DC9008D3628 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 5626262F2B671DC9008D3628 /* Build configuration list for PBXProject "Tactile Totals" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5626262B2B671DC9008D3628;
+			productRefGroup = 562626352B671DC9008D3628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				562626332B671DC9008D3628 /* Tactile Totals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		562626322B671DC9008D3628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				562626432B671DCA008D3628 /* Preview Assets.xcassets in Resources */,
+				562626402B671DCA008D3628 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		562626302B671DC9008D3628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5626263E2B671DC9008D3628 /* ContentView.swift in Sources */,
+				5626264B2B671FBA008D3628 /* KeypadWindowModel.swift in Sources */,
+				5626263C2B671DC9008D3628 /* Tactile_TotalsApp.swift in Sources */,
+				5626264D2B674367008D3628 /* SMCHelpers.swift in Sources */,
+				563060412B89450200760897 /* NumericReadout.swift in Sources */,
+				5601ABCD2B8BD17D00D4588E /* Keypad.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		562626452B671DCA008D3628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		562626462B671DCA008D3628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		562626482B671DCA008D3628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tactile Totals/Preview Content\"";
+				DEVELOPMENT_TEAM = Q5RFWDN5GD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smcaruso.Tactile-Totals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		562626492B671DCA008D3628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tactile Totals/Preview Content\"";
+				DEVELOPMENT_TEAM = Q5RFWDN5GD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.smcaruso.Tactile-Totals";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5626262F2B671DC9008D3628 /* Build configuration list for PBXProject "Tactile Totals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				562626452B671DCA008D3628 /* Debug */,
+				562626462B671DCA008D3628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		562626472B671DCA008D3628 /* Build configuration list for PBXNativeTarget "Tactile Totals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				562626482B671DCA008D3628 /* Debug */,
+				562626492B671DCA008D3628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		562626392B671DC9008D3628 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5626262C2B671DC9008D3628 /* Project object */;
+}

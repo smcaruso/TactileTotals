@@ -1,0 +1,1239 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 1.0 (409.60.6)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Keys", "BottomCase", "CaseMaterial", "KeyClear", "KeyMulti", "KeyDiv", "KeySub", "KeyAdd", "KeyEqual", "Key7", "Key8", "Key9", "Key4", "Key5", "Key6", "Key1", "Key2", "Key3", "Key0", "KeyDec"]
+    def "Keys" (
+        active = true
+        customData = {
+            float3 rotationEulerHint = (-1.570796, -1.5707958, -3.1415925)
+        }
+        references = @KeypadA.usdz@</Keypad/Keys>
+    )
+    {
+        quatf xformOp:orient = (0.5031332, -0.5031331, -0.49684703, -0.49684706)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "KeyClear" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/KeyClear> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_KeyOperationComponent"
+            {
+                uniform token info:id = "RealityKitContent.KeyOperationComponent"
+                token operation = "clear"
+            }
+        }
+
+        over "KeyMulti" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/KeyMulti> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_KeyOperationComponent"
+            {
+                uniform token info:id = "RealityKitContent.KeyOperationComponent"
+                token operation = "multiply"
+            }
+        }
+
+        over "KeyDiv" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/KeyDiv> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_KeyOperationComponent"
+            {
+                uniform token info:id = "RealityKitContent.KeyOperationComponent"
+                token operation = "divide"
+            }
+        }
+
+        over "KeyMinus" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/KeySub> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_KeyOperationComponent"
+            {
+                uniform token info:id = "RealityKitContent.KeyOperationComponent"
+                token operation = "subtract"
+            }
+        }
+
+        over "KeyPlus" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/KeyAdd> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_KeyOperationComponent"
+            {
+                uniform token info:id = "RealityKitContent.KeyOperationComponent"
+                token operation = "add"
+            }
+        }
+
+        over "KeyEqual" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/KeyEqual> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_KeyOperationComponent"
+            {
+                uniform token info:id = "RealityKitContent.KeyOperationComponent"
+                token operation = "equal"
+            }
+        }
+
+        over "Key7" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key7> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 7
+            }
+        }
+
+        over "Key8" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key8> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 8
+            }
+        }
+
+        over "Key9" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key9> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 9
+            }
+        }
+
+        over "Key4" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key4> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 4
+            }
+        }
+
+        over "Key6" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key6> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            float3 xformOp:translate = (0, -0.010499997, 0.0024643466)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 6
+            }
+
+            over "KeyStd"
+            {
+                def RealityKitComponent "Collider"
+                {
+                    uint group = 1
+                    uniform token info:id = "RealityKit.Collider"
+                    uint mask = 4294967295
+                    token type = "Default"
+
+                    def RealityKitStruct "Shape"
+                    {
+                        float3 extent = (0.020000001, 0.020000001, 0.004990085)
+                        token shapeType = "Box"
+
+                        def RealityKitStruct "pose"
+                        {
+                            float3 position = (0, 0, 0.0024950425)
+                        }
+                    }
+                }
+
+                def RealityKitComponent "InputTarget"
+                {
+                    uniform token info:id = "RealityKit.InputTarget"
+                }
+            }
+        }
+
+        over "Key1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key1> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 1
+            }
+        }
+
+        over "Key2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key2> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 2
+            }
+        }
+
+        over "Key5" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key5> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 5
+            }
+        }
+
+        over "Key3" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key3> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+                int keyValue = 3
+            }
+        }
+
+        over "Key0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/Key0> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_NumberValue"
+            {
+                uniform token info:id = "RealityKitContent.NumberValue"
+            }
+        }
+
+        over "KeyDecimal" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Root/KeyDec> (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+
+            def RealityKitCustomComponent "RealityKitContent_KeyOperationComponent"
+            {
+                uniform token info:id = "RealityKitContent.KeyOperationComponent"
+                token operation = "decimal"
+            }
+        }
+    }
+
+    def "BottomCase" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (-1.570796, -1.5707959, -3.1415923)
+        }
+        references = @KeypadA.usdz@</Keypad/BottomCase>
+    )
+    {
+        rel material:binding = </Root/CaseMaterial> (
+            bindMaterialAs = "strongerThanDescendants"
+        )
+        quatf xformOp:orient = (0.49924767, -0.49924773, -0.500751, -0.50075114)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "BottomCase"
+        {
+            def RealityKitComponent "GroundingShadow"
+            {
+                bool enableIBLShadow = 1
+                bool enableMeshShadow = 1
+                uniform token info:id = "RealityKit.GroundingShadow"
+            }
+        }
+    }
+
+    def Material "CaseMaterial"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        prepend token outputs:surface.connect = </Root/CaseMaterial/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0.07933312, 0.07933312, 0.07933312) (
+                colorSpace = "srgb_texture"
+            )
+            float inputs:roughness = 0.75
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_COL_4K.png@
+            float2 inputs:st.connect = </Root/CaseMaterial/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/CaseMaterial/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/CaseMaterial/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/CaseMaterial/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "KeyClear"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/KeyClear/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/KeyClear/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/KeyClear/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/KeyClear.png@
+            float2 inputs:st.connect = </Root/KeyClear/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyClear/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/KeyClear/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyClear/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "KeyMulti"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/KeyMulti/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/KeyMulti/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/KeyMulti/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/KeyMulti.png@
+            float2 inputs:st.connect = </Root/KeyMulti/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyMulti/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/KeyMulti/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyMulti/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "KeyDiv"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/KeyDiv/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/KeyDiv/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/KeyDiv/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/KeyDiv.png@
+            float2 inputs:st.connect = </Root/KeyDiv/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyDiv/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/KeyDiv/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyDiv/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "KeySub"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/KeySub/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/KeySub/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/KeySub/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/KeySub.png@
+            float2 inputs:st.connect = </Root/KeySub/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeySub/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/KeySub/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeySub/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "KeyAdd"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/KeyAdd/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/KeyAdd/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/KeyAdd/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/KeyAdd.png@
+            float2 inputs:st.connect = </Root/KeyAdd/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyAdd/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/KeyAdd/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyAdd/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "KeyEqual"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/KeyEqual/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/KeyEqual/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/KeyEqual/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/KeyEqual.png@
+            float2 inputs:st.connect = </Root/KeyEqual/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyEqual/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/KeyEqual/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyEqual/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key7"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key7/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key7/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key7/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key7.png@
+            float2 inputs:st.connect = </Root/Key7/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key7/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key7/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key7/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key8"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key8/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key8/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key8/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key8.png@
+            float2 inputs:st.connect = </Root/Key8/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key8/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key8/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key8/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key9"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key9/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key9/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key9/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key9.png@
+            float2 inputs:st.connect = </Root/Key9/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key9/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key9/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key9/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key4"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key4/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key4/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key4/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key4.png@
+            float2 inputs:st.connect = </Root/Key4/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key4/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key4/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key4/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key5"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key5/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key5/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key5/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key5.png@
+            float2 inputs:st.connect = </Root/Key5/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key5/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key5/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key5/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key6"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key6/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key6/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key6/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key6.png@
+            float2 inputs:st.connect = </Root/Key6/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key6/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key6/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key6/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key1"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key1/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key1/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key1/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key1.png@
+            float2 inputs:st.connect = </Root/Key1/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key1/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key1/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key1/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key2"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key2/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key2/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key2/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key2.png@
+            float2 inputs:st.connect = </Root/Key2/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key2/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key2/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key2/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key3"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key3/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key3/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key3/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key3.png@
+            float2 inputs:st.connect = </Root/Key3/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key3/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key3/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key3/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "Key0"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/Key0/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/Key0/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/Key0/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/Key0.png@
+            float2 inputs:st.connect = </Root/Key0/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key0/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/Key0/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/Key0/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Material "KeyDec"
+    {
+        token inputs:frame:stPrimvarName = "st"
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/KeyDec/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 1) (
+                colorSpace = "srgb_texture"
+            )
+            color3f inputs:diffuseColor.connect = </Root/KeyDec/diffuseColor.outputs:rgb>
+            normal3f inputs:normal = (0, 0, 1)
+            normal3f inputs:normal.connect = </Root/KeyDec/normal.outputs:rgb>
+            token outputs:surface
+        }
+
+        def Shader "diffuseColor"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/KeyDecimal.png@
+            float2 inputs:st.connect = </Root/KeyDec/diffuseColor/TexCoordReader.outputs:result>
+            color3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyDec/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @Textures/PlasticMoldDryBlast002_NRM_4K.png@
+            float2 inputs:st.connect = </Root/KeyDec/normal/TexCoordReader.outputs:result>
+            normal3f outputs:rgb
+
+            def Shader "TexCoordReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname.connect = </Root/KeyDec/UsdPreviewSurface.inputs:frame:stPrimvarName>
+                float2 outputs:result
+            }
+        }
+    }
+}
+

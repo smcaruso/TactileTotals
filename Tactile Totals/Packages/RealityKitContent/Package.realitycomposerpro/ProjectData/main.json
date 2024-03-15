@@ -1,0 +1,19 @@
+{
+  "pathsToIds" : {
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/GridMaterial.usda" : "440DE5B4-E4E4-459B-AABF-9ACE96319272",
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/procedural_sphere_grid.usda" : "34C460AE-CA1B-4348-BD05-621ACBDFFE97",
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Scene.usda" : "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
+    "\/RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Untitled Scene.usda" : "03E02005-EFA6-48D6-8A76-05B2822A74E9",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/GridMaterial.usda" : "FBD8436F-6B8B-4B82-99B5-995D538B4704",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/KeypadA.usdz" : "7437F235-7A05-4C18-A4BE-973D6B8E81FD",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Materials\/GridMaterial.usda" : "B504CF00-715C-42F3-86D2-0C1D7B78E636",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Materials\/Untitled%20Scene.usda" : "98FC4660-CFD7-444A-BFD5-73461C7BD6C9",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/procedural_sphere_grid.usda" : "1CBF3893-ABFD-408C-8B91-045BFD257808",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/Scene.usda" : "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/TactileTotalsKeypadA.usda" : "5458A790-E89D-411D-AA98-14C4478B11A8",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/TactileTotalsKeypadA.usdc" : "7BB016ED-CF1E-4F68-BB3F-6B1BA0A3D4C3",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/TactileTotalsKeypadA.usdz" : "3B031A56-E237-4E5B-86A6-336FCAFA3A61",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/TTKey0.usdz" : "199E4275-44B4-46EE-986F-0566F5DCDD23",
+    "RealityKitContent\/Sources\/RealityKitContent\/RealityKitContent.rkassets\/TTKeyEqPl.usdz" : "A6DE4AD7-8A29-4755-A398-4C9664F5DB5E"
+  }
+}

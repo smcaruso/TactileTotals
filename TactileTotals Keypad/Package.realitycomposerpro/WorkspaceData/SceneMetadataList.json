@@ -1,0 +1,59 @@
+{
+  "030A850E-B982-4168-A626-C8C350FA6310" : {
+    "objectMetadataList" : [
+
+    ]
+  },
+  "62FDD1C8-6986-4849-929D-4C3467210684" : {
+    "objectMetadataList" : [
+      [
+        "62FDD1C8-6986-4849-929D-4C3467210684",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "62FDD1C8-6986-4849-929D-4C3467210684",
+        "Root",
+        "TactileTotals",
+        "Keypad"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "62FDD1C8-6986-4849-929D-4C3467210684",
+        "Root",
+        "TactileTotals",
+        "Shell",
+        "Titlebar"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "62FDD1C8-6986-4849-929D-4C3467210684",
+        "Root",
+        "TactileTotals"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "62FDD1C8-6986-4849-929D-4C3467210684",
+        "Root",
+        "TactileTotals",
+        "Shell"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      }
+    ]
+  }
+}
